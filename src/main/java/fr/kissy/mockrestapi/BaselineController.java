@@ -10,6 +10,6 @@ public class BaselineController {
 
     @GetMapping("/baseline")
     public String greeting() {
-        return String.format("baseline — %tc", new Date());
+        return String.format("baseline — %tQ", new Date());
     }
 }

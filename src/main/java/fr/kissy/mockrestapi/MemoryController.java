@@ -11,9 +11,9 @@ import java.util.Date;
 public class MemoryController {
 
     @GetMapping("/memory")
-    public String greeting(@RequestParam Integer bytes, @RequestParam Integer milliseconds) throws InterruptedException {
+    public String greeting(@RequestParam(defaultValue = "1000") Integer bytes, @RequestParam(defaultValue = "100") Integer milliseconds) throws InterruptedException {
         byte[] allocation = new byte[bytes];
         Thread.sleep(milliseconds);
-        return String.format("memory allocated %d — %tc", allocation.length, new Date());
+        return String.format("memory allocated an array of %d bytes for %d milliseconds — %tQ", allocation.length, milliseconds, new Date());
     }
 }
