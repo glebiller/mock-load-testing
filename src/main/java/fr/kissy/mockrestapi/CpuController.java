@@ -11,7 +11,7 @@ public class CpuController {
     private static final int SCALE = 10000;
 
     @GetMapping("/cpu")
-    public String greeting(@RequestParam(defaultValue = "1000") Integer load) {
+    public String cpu(@RequestParam(defaultValue = "1000") Integer load) {
         StringBuilder pi = new StringBuilder();
         int[] arr = new int[load + 1];
         int carry = 0;

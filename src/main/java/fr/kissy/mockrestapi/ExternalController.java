@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 
 @RestController
-public class BaselineController {
+public class ExternalController {
 
-    @GetMapping("/baseline")
-    public String baseline() {
-        return String.format("baseline — %tQ", new Date());
+    @GetMapping("/external")
+    public String external() {
+        return String.format("todo — %tQ", new Date());
     }
 }
