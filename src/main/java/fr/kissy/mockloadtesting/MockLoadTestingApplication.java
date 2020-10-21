@@ -1,23 +1,20 @@
-package fr.kissy.mockrestapi;
+package fr.kissy.mockloadtesting;
 
-import fr.kissy.mockrestapi.scheduling.JmxAwareThreadPoolTaskExecutor;
+import fr.kissy.mockloadtesting.scheduling.JmxAwareThreadPoolTaskExecutor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.task.AsyncTaskExecutor;
-import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
-import java.util.concurrent.Executor;
-
 @EnableAsync
 @SpringBootApplication
-public class MockRestApiApplication {
+public class MockLoadTestingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MockRestApiApplication.class, args);
+        SpringApplication.run(MockLoadTestingApplication.class, args);
     }
 
     @Value("${datasource.executor.pool.size:10}")

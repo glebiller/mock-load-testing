@@ -1,10 +1,10 @@
-package fr.kissy.mockrestapi;
+package fr.kissy.mockloadtesting;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MockRestApiApplicationTests {
+class MockLoadTestingApplicationTests {
 
 	@Test
 	void contextLoads() {

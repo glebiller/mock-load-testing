@@ -1,6 +1,6 @@
-package fr.kissy.mockrestapi;
+package fr.kissy.mockloadtesting;
 
-import fr.kissy.mockrestapi.sql.DataSourceWork;
+import fr.kissy.mockloadtesting.sql.DataSourceWork;
 import org.springframework.core.task.AsyncTaskExecutor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

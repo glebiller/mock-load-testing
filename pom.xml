@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>fr.kissy</groupId>
-	<artifactId>mock-rest-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>mock-rest-api</name>
+	<artifactId>mock-load-testing</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>Mock Load Testing</name>
 	<description>Various loads to run performance tests</description>
 
 	<properties>

@@ -1,4 +1,4 @@
-package fr.kissy.mockrestapi.model;
+package fr.kissy.mockloadtesting.model;
 
 import java.util.List;
 

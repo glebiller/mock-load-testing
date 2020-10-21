@@ -1,4 +1,4 @@
-package fr.kissy.mockrestapi.sql;
+package fr.kissy.mockloadtesting.sql;
 
 import org.springframework.core.task.AsyncTaskExecutor;
 

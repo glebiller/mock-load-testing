@@ -1,4 +1,4 @@
-package fr.kissy.mockrestapi.scheduling;
+package fr.kissy.mockloadtesting.scheduling;
 
 import org.springframework.jmx.export.annotation.ManagedAttribute;
 import org.springframework.jmx.export.annotation.ManagedResource;

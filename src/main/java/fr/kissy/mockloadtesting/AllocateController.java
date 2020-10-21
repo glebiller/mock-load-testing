@@ -1,6 +1,6 @@
-package fr.kissy.mockrestapi;
+package fr.kissy.mockloadtesting;
 
-import fr.kissy.mockrestapi.model.Human;
+import fr.kissy.mockloadtesting.model.Human;
 import org.jeasy.random.EasyRandom;
 import org.jeasy.random.EasyRandomParameters;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
-import java.util.stream.Collectors;
 
 import static org.jeasy.random.FieldPredicates.inClass;
 import static org.jeasy.random.FieldPredicates.named;
