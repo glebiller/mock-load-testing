@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:debianslim-jre
+FROM adoptopenjdk:11-jre-hotspot
 
 RUN addgroup --system spring && adduser --system --no-create-home --disabled-login --disabled-password --ingroup spring spring
 USER spring:spring
@@ -14,7 +14,9 @@ ENTRYPOINT ["java", \
     "-Dcom.sun.management.jmxremote.rmi.port=9090", \
     "-Dcom.sun.management.jmxremote.ssl=false", \
     "-Dcom.sun.management.jmxremote.authenticate=false", \
+    "-XX:+UseContainerSupport", \
     "-XX:+UseG1GC", \
+    "-XshowSettings:vm", \
     "-jar", "/app.jar"]
 
 EXPOSE 8080
