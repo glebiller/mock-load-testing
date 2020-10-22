@@ -1,5 +1,7 @@
 # Mock Load Testing
 
+![Build](https://github.com/Kissy/mock-load-testing/workflows/Build/badge.svg)
+
 Provide a mock application for testing various case & scenario expected during load testing.
 The project expose an OpenAPI definition & a SwaggerUI to browser endpoints.
 
