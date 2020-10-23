@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>fr.kissy</groupId>
 	<artifactId>mock-load-testing</artifactId>
-	<version>1.1.0</version>
+	<version>1.2.0-SNAPSHOT</version>
 	<name>Mock Load Testing</name>
 	<description>Various loads to run performance tests</description>
 
@@ -58,7 +58,7 @@
     <scm>
         <url>https://github.com/Kissy/mock-load-testing</url>
         <connection>scm:git:https://github.com/Kissy/mock-load-testing.git</connection>
-        <tag>v1.1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
