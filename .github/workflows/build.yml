@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - v*
 
 env:
   IMAGE_NAME: mock-load-testing
@@ -11,6 +13,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: "!(contains(github.event.head_commit.message, '[maven-release-plugin] prepare release') && contains(github.ref, 'refs/heads/'))"
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 11
